@@ -6,4 +6,6 @@ You will train the model on a Oxford-IIIT Pets dataset.The Oxford-IIIT Pet Datas
 
 ![pet_annotations](https://user-images.githubusercontent.com/81853443/113475169-66260780-948d-11eb-8e69-125d9bbc0d9d.jpg)
 
+The following annotations are available for every image in the dataset: (a) species and breed name; (b) a tight bounding box (ROI) around the head of the animal; and (c) a pixel level foreground-background segmentation (Trimap).
+
 You will be using a pretrained VGG-16 network for the feature extraction path, then followed by an FCN-8 network for upsampling and generating the predictions. The output will be a label map (i.e. segmentation mask) with predictions for 3 classes.
